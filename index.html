@@ -6,40 +6,59 @@
     <title>Bala Veera Raghava Reddy - Software Engineer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
         }
         .container {
-            width: 100%;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 20px auto;
             background-color: #fff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             display: flex;
-            flex-wrap: wrap;
+            overflow: hidden;
         }
         .left-column {
             background-color: #2c3e50;
             color: white;
-            padding: 20px;
+            padding: 30px;
             width: 35%;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         .left-column img {
-            width: 100px;
-            height: 100px;
+            width: 120px;
+            height: 120px;
             border-radius: 50%;
             margin-bottom: 20px;
         }
-        .left-column h2, .left-column p, .left-column ul {
-            margin: 0;
+        .left-column h2 {
+            font-size: 1.5em;
+            margin: 20px 0 10px;
+        }
+        .left-column p, .left-column ul {
+            margin: 10px 0;
             padding: 0;
             list-style-type: none;
+            width: 100%;
+        }
+        .left-column a {
+            color: white;
+            text-decoration: none;
+        }
+        .left-column ul li {
+            margin: 10px 0;
+            padding: 5px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
         }
         .right-column {
-            padding: 20px;
+            padding: 30px;
             width: 65%;
+            box-sizing: border-box;
         }
         .right-column h1 {
             margin: 0;
@@ -48,10 +67,15 @@
         }
         .right-column h2 {
             font-size: 1.5em;
-            color: #333;
+            color: #2c3e50;
             margin-top: 20px;
             border-bottom: 2px solid #2c3e50;
             padding-bottom: 5px;
+        }
+        .right-column p {
+            margin: 10px 0;
+            color: #555;
+            line-height: 1.6;
         }
         .right-column ul {
             list-style-type: none;
@@ -60,8 +84,18 @@
         .right-column ul li {
             margin: 10px 0;
         }
-        .right-column p {
-            margin: 10px 0;
+        .right-column ul li strong {
+            display: block;
+            font-size: 1.1em;
+            color: #2c3e50;
+        }
+        .right-column ul li em {
+            display: block;
+            font-size: 1em;
+            color: #666;
+        }
+        .right-column ul li p {
+            margin: 5px 0 0;
         }
     </style>
 </head>
@@ -70,8 +104,8 @@
         <div class="left-column">
             <img src="bala.png" alt="Profile Picture">
             <h2>Contact</h2>
-            <p>Phone: +91-09494463138</p>
-            <p>Email: <a href="mailto:balanallamilli94944@gmail.com" style="color: white;">balanallamilli94944@gmail.com</a></p>
+            <p>Phone: +91-9494463138</p>
+            <p>Email: <a href="mailto:balanallamilli94944@gmail.com">balanallamilli94944@gmail.com</a></p>
             <h2>Education</h2>
             <p>B.E in Mechanical Engineering from Dr. MGR University - 2017</p>
             <h2>Skills</h2>
@@ -92,35 +126,35 @@
             <h2>Work Experience</h2>
             <ul>
                 <li>
-                    <strong>Tekkgence, Hyderabad, India</strong><br>
-                    <em>Feb 2024 - Present | Golang Developer</em><br>
-                    Responsibilities: Design and develop microservices and test them in a local environment. Work on a networking tool used by many organizations such as HPE and Dell.
+                    <strong>Tekkgence, Hyderabad, India</strong>
+                    <em>Feb 2024 - Present | Golang Developer</em>
+                    <p>Responsibilities: Design and develop microservices and test them in a local environment. Work on a networking tool used by many organizations such as HPE and Dell.</p>
                 </li>
                 <li>
-                    <strong>Coffeebeans Consulting, Hyderabad, India</strong><br>
-                    <em>Mar 2023 - Feb 2024 | SDE L2</em><br>
-                    Technologies used: Golang, Kafka, Chaincode, Smart Contracts, Microservices Architecture, Event-Driven Programming<br>
-                    Responsibilities: Architect, design, and develop microservices in Golang. Design and deploy smart contracts. Lead a team of 5 software engineers. Collaborate with clients to provide tech solutions.
+                    <strong>Coffeebeans Consulting, Hyderabad, India</strong>
+                    <em>Mar 2023 - Feb 2024 | SDE L2</em>
+                    <p>Technologies used: Golang, Kafka, Chaincode, Smart Contracts, Microservices Architecture, Event-Driven Programming</p>
+                    <p>Responsibilities: Architect, design, and develop microservices in Golang. Design and deploy smart contracts. Lead a team of 5 software engineers. Collaborate with clients to provide tech solutions.</p>
                 </li>
                 <li>
-                    <strong>TechMojo Solutions, Hyderabad, India</strong><br>
-                    <em>Mar 2022 - Feb 2023 | Member Of Technical Staff</em><br>
-                    Project: PPBet<br>
-                    Technologies used: Golang, Kafka, Docker, Postgres, Git<br>
-                    Responsibilities: Design and develop microservices in Golang. Create Kafka topics and process messages.
+                    <strong>TechMojo Solutions, Hyderabad, India</strong>
+                    <em>Mar 2022 - Feb 2023 | Member Of Technical Staff</em>
+                    <p>Project: PPBet</p>
+                    <p>Technologies used: Golang, Kafka, Docker, Postgres, Git</p>
+                    <p>Responsibilities: Design and develop microservices in Golang. Create Kafka topics and process messages.</p>
                 </li>
                 <li>
-                    <strong>Virtusa Consulting Services, Hyderabad, India</strong><br>
-                    <em>Dec 2018 - May 2022 | Associate Consultant</em><br>
-                    Projects: APRIL, Stock Record Services, CBIS, Ecosys<br>
-                    Technologies used: Spring Boot, Oracle database, Maven, Git, AWS, Java, Python<br>
-                    Responsibilities: Develop REST APIs, migrate code, deploy applications, and lead projects.
+                    <strong>Virtusa Consulting Services, Hyderabad, India</strong>
+                    <em>Dec 2018 - May 2022 | Associate Consultant</em>
+                    <p>Projects: APRIL, Stock Record Services, CBIS, Ecosys</p>
+                    <p>Technologies used: Spring Boot, Oracle database, Maven, Git, AWS, Java, Python</p>
+                    <p>Responsibilities: Develop REST APIs, migrate code, deploy applications, and lead projects.</p>
                 </li>
                 <li>
-                    <strong>Krify Innovations Private Limited, Hyderabad, India</strong><br>
-                    <em>Apr 2017 - Nov 2018 | IOS Developer</em><br>
-                    Technologies used: Swift, Spring Boot, Oracle database, Maven, Git<br>
-                    Responsibilities: Develop UI and backend, manual testing, and use agile methodologies.
+                    <strong>Krify Innovations Private Limited, Hyderabad, India</strong>
+                    <em>Apr 2017 - Nov 2018 | IOS Developer</em>
+                    <p>Technologies used: Swift, Spring Boot, Oracle database, Maven, Git</p>
+                    <p>Responsibilities: Develop UI and backend, manual testing, and use agile methodologies.</p>
                 </li>
             </ul>
         </div>
